@@ -13,10 +13,10 @@ public class WineManagerTest {
 
     WineManagerJDBC WineManager = new WineManagerJDBC();
 
-    private final static String[] WINENAME = {"Enter Sandman", "Nothing Else Matters", "Cowboys From Hell", "Enemy Inside", "Gone Away"};
-    private final static String[] TASTENAME = {"Metallica", "Metallica", "Pantera", "Dream Theater", "Offspring"};
+    private final static String[] WINENAME = {"Fresko", "Cote", "Kadarka", "Amareno", "Porto"};
+    private final static String[] TASTENAME = {"wytrawne", "slodkie", "wytrawne", "slodkie", "polwytrawne"};
     private final static double[] COST = {12.99, 7.20, 18.75, 3.45, 17.20};
-    private final static String[] YEAR = {"1991", "1991", "1990", "2013", "1997"};
+    private final static String[] YEAR = {"1991", "1991", "1990", "2013", "2018"};
 
     @Test
     public void checkConnection() {
