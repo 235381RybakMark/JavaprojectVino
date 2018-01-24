@@ -25,28 +25,28 @@ public class WineManagerTest {
     @Autowired
     WineManager wineManager;
     
-    private final String WINENAME_1 = "Sad but True";
-    private final String PANSTWONAME_1 = "Metallica";
-    private final double COST_1 = 15.99;
-    private final int YOR_1 = 1991;
+    private final String WINENAME_1 = "Fresco";
+    private final String PANSTWONAME_1 = "Polska";
+    private final double COST_1 = 12.99;
+    private final int YOR_1 = 2018;
     
-    private final String WINENAME_2 = "Enter Sandman";
-    private final String PANSTWONAME_2 = "Metallica";
-    private final double COST_2 = 2.99;
+    private final String WINENAME_2 = "Carlo Rossi";
+    private final String PANSTWONAME_2 = "USA";
+    private final double COST_2 = 19.99;
     private final int YOR_2 = 1991;
     
-    private final String WINENAME_3 = "Nothing else Matters";
-    private final String PANSTWONAME_3 = "Metallica";
+    private final String WINENAME_3 = "Porto";
+    private final String PANSTWONAME_3 = "Italia";
     private final double COST_3 = 30.99;
     private final int YOR_3 = 1991;
     
-    Smak smak1 = new Smak("qwert");
-    Smak smak2 = new Smak("asdfg");
-    Smak smak3 = new Smak("zxcvb");
+    Smak smak1 = new Smak("wytrawny");
+    Smak smak2 = new Smak("slodkie");
+    Smak smak3 = new Smak("slodkie");
     
-    Kolor kolor1 = new Kolor("Heavy Metal");
-    Kolor kolor2 = new Kolor("Metal");
-    Kolor kolor3 = new Kolor("Thrash Metal");
+    Kolor kolor1 = new Kolor("czerwone");
+    Kolor kolor2 = new Kolor("biale");
+    Kolor kolor3 = new Kolor("czerwone");
     
     @Test
     public void addWineCheck() {
@@ -87,7 +87,7 @@ public class WineManagerTest {
 
     @Test
     public void addSmakCheck() {
-        Smak smak = new Smak("werty");
+        Smak smak = new Smak("polwutrawne");
 
         List<Smak> before = wineManager.getAllSmaks();
 
@@ -100,7 +100,7 @@ public class WineManagerTest {
 
     @Test
     public void deleteSmakCheck() {
-    	Smak smak = new Smak("sdfgh");
+    	Smak smak = new Smak("czerwone");
 
     	wineManager.addSmak(smak);
 
@@ -114,7 +114,7 @@ public class WineManagerTest {
     }
     @Test
     public void addKolorCheck() {
-        Kolor kolor = new Kolor("Pop");
+        Kolor kolor = new Kolor("rozowe");
 
         List<Kolor> before = wineManager.getAllKolors();
 
@@ -128,7 +128,7 @@ public class WineManagerTest {
 
     @Test
     public void deleteKolorCheck() {
-    	Kolor kolor = new Kolor("Rock");
+    	Kolor kolor = new Kolor("biale");
 
     	wineManager.addKolor(kolor);
 
